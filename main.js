@@ -29,3 +29,12 @@ piadas.push(new Piada("O dilema do paraquedas", " Se na primeira tentativa você
 piadas.push(new Piada("A planta impacient", "Qual é a planta que mais tem pressa no jardim? A vapt-vupt.", "", categoria[1]));
 
 console.log(piadas)
+
+const selectCategorias = document.getElementById("categorias");
+
+categoria.forEach(cat => {
+    const option = document.createElement("option");
+
+    option.textContent = cat.descricao;
+
+});
