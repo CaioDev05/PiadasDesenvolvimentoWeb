@@ -1,5 +1,6 @@
 class Categoria{
-    constructor(descricao) {
+    constructor(id, descricao) {
+        this.id = id;
         this.descricao = descricao;
     }
 }

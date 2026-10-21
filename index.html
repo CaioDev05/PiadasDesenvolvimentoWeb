@@ -9,18 +9,28 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body>
-    <header class="mx-4 d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <div class="col-md-3 mb-2 mb-md-0">
-            <p href="/" class="text-center fw-bold fs-3 text-decoration-none">Piadas</p>
+<body data-bs-theme="dark">
+    <header
+        class="mx-4 d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="col-md-3 mb-md-0">
+            <span href="/" class="text-decoration-none ms-3 display-6 fw-semibold">Piadas</span>
         </div>
-        <div class="col-md-3">
-            <button class="btn btn-primary">Aleatório</button>
-            <select name="Categoria" id="categoria">
-                
-            </select>
+        <div class="col-md-2 d-flex gap-3 ms-3">
+            <select id="categorias" class="form form-select me-3" onchange="piadaCategoria()"></select>
+            <button class="btn btn-primary w-100" onclick="piadaAleatoria()">Aleatório</button>
         </div>
     </header>
+
+    <main class="px-4 py-5 my-5 text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold text-body-emphasis" id="titulo-piada">Titulo</h1>
+            <img src="" alt="" id="imagem-piada" class="img-fluid border rounded-3 shadow-lg mb-4" width="700"
+                height="500">
+            <p class="lead mb-4" id="texto-piada"></p>
+            <p class="lead mb-4" id="categoria-piada"></p>
+        </div>
+
+    </main>
 
 
     <script src="Categoria.js"></script>
